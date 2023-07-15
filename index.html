@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Title Here</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #header {
-            background: #35424a;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        #header h1 {
-            padding: 5px;
-            margin: 0;
-        }
-        #header h2 {
-            padding: 5px;
-            margin: 0;
-            color: #e8491d;
-        }
-        #content ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #content ul li a {
-            color: #35424a;
-            text-decoration: none;
-        }
-    </style>
+  <title>My Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    #sidebar {
+      background-color: #c0c0c0;
+      width: 200px;
+      height: 100vh;
+      float: left;
+    }
+    
+    #main-content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    
+    .sidebar-link {
+      display: block;
+      padding: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    
+    .sidebar-link:hover {
+      background-color: #808080;
+    }
+    
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header id="header">
-            <h1>Your Title Here</h1>
-            <h2>Your Subtitle Here</h2>
-        </header>
-        <section id="content">
-            <ul>
-                <li><a href="link1.html">Link 1</a></li>
-                <li><a href="link2.html">Link 2</a></li>
-                <li><a href="link3.html">Link 3</a></li>
-                <!-- Add more links as needed -->
-            </ul>
-        </section>
+  <div id="sidebar">
+    <a class="sidebar-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="sidebar-link" href="https://www.google.com/">Google</a>
+    <!-- Add more links here if needed -->
+  </div>
+  
+  <div id="main-content">
+    <div class="box">
+      <h2>Personal Experiences</h2>
+      <p>Write about your personal experiences here.</p>
     </div>
+    
+    <div class="box">
+      <h2>About Me</h2>
+      <p>Write about yourself and your background here.</p>
+    </div>
+    
+    <!-- Add more boxes for additional information -->
+  </div>
 </body>
 </html>
