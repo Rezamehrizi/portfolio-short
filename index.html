@@ -11,13 +11,13 @@
     
     #sidebar {
       background-color: #c0c0c0;
-      width: 200px;
+      width: 400px; /* Adjusted width to be twice as big */
       height: 100vh;
       float: left;
     }
     
     #main-content {
-      margin-left: 200px;
+      margin-left: 400px; /* Updated margin to match the wider sidebar */
       padding: 20px;
     }
     
@@ -47,24 +47,32 @@
     <a class="sidebar-link" href="https://www.google.com/">Google</a>
     <!-- Add more links here if needed -->
     <p>Fateme Haghpanah</p>
-    <p><a href="link-to-your-resume.pdf">Download my resume!</a></p>
-    <p>I enjoy spending time in nature (for example star gazing, hiking, and kayaking), and constantly challenging myself to lift heavier weights with a barbell!</p>
-    <p>Email: ftm.haghpanah@gmail.com</p>
-    <p>About me</p>
-    <p>Professional Experience</p>
-    <p>Publications</p>
-    <p>Projects</p>
+    <p><a href="mailto:ftm.haghpanah@gmail.com">Email: ftm.haghpanah@gmail.com</a></p> <!-- Added "mailto" to create an email hyperlink -->
+    <p><a href="#about-me">About me</a></p> <!-- Added anchor links to scroll to specific sections on the main page -->
+    <p><a href="#professional-experience">Professional Experience</a></p>
+    <p><a href="#publications">Publications</a></p>
+    <p><a href="#projects">Projects</a></p>
   </div>
   
   <div id="main-content">
-    <div class="box">
-      <h2>Personal Experiences</h2>
-      <p>Write about your personal experiences here.</p>
-    </div>
-    
-    <div class="box">
+    <div class="box" id="about-me"> <!-- Added IDs to the sections for anchor links to scroll to -->
       <h2>About Me</h2>
       <p>Write about yourself and your background here.</p>
+    </div>
+    
+    <div class="box" id="professional-experience">
+      <h2>Professional Experience</h2>
+      <p>Write about your professional experience here.</p>
+    </div>
+    
+    <div class="box" id="publications">
+      <h2>Publications</h2>
+      <p>Write about your publications here.</p>
+    </div>
+    
+    <div class="box" id="projects">
+      <h2>Projects</h2>
+      <p>Write about your projects here.</p>
     </div>
     
     <!-- Add more boxes for additional information -->
