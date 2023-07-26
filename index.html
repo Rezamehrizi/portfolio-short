@@ -10,72 +10,227 @@
     }
     
     #sidebar {
-      background-color: #c0c0c0;
-      width: 400px; /* Adjusted width to be twice as big */
+      background-color: #ffffff;
+      width: 300px;
       height: 100vh;
-      float: left;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
     }
     
     #main-content {
-      margin-left: 400px; /* Updated margin to match the wider sidebar */
-      padding: 20px;
+      margin-left: 400px;
+      padding: 100px;
+      background-color: #f0f0f0; /* Set the background color to light gray */
     }
+
+    .box {
+      width: 900px;
+      height: 300px;
+      background-color: #ffffff; /* Set the box color to white */
+      margin-bottom: 20px;
+      padding: 10px;
+      line-height: 1.5;
+    }
+.left-text {
+  float: left;
+}
+
+.right-text {
+  float: right;
+}
     
     .sidebar-link {
       display: block;
       padding: 10px;
-      color: #ffffff;
+      color: blue;
       text-decoration: none;
+      margin-bottom: -5px;
     }
     
     .sidebar-link:hover {
-      background-color: #808080;
+      background-color: white;
     }
     
-    .box {
-      width: 300px;
-      height: 200px;
-      background-color: #f0f0f0;
-      margin-bottom: 20px;
-      padding: 10px;
+    #profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto; /* Center the picture */
+    }
+    
+    #name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center; /* Center the name */
+    }
+    
+    .link-separator {
+      border-top: 1px solid #000000;
+      margin: 1px 0;
+    }
+    
+    .logo {
+      width: 20px;
+      height: 20px;
+      margin-right: 0px;
+    }
+    
+    .logo-link-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1px;
+    }
+    
+    a.resume-link {
+      text-decoration: none;
+      font-weight: bold; /* Add this line to make the font bold */
+    }
+    
+    a.resume-link,
+    a.email-link {
+      text-decoration: none;
     }
   </style>
+<style>
+  .no-underline {
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
   <div id="sidebar">
-    <a class="sidebar-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="sidebar-link" href="https://www.google.com/">Google</a>
-    <!-- Add more links here if needed -->
-    <p>Fateme Haghpanah</p>
-    <p><a href="mailto:ftm.haghpanah@gmail.com">Email: ftm.haghpanah@gmail.com</a></p> <!-- Added "mailto" to create an email hyperlink -->
-    <p><a href="#about-me">About me</a></p> <!-- Added anchor links to scroll to specific sections on the main page -->
-    <p><a href="#professional-experience">Professional Experience</a></p>
-    <p><a href="#publications">Publications</a></p>
-    <p><a href="#projects">Projects</a></p>
-  </div>
-  
-  <div id="main-content">
-    <div class="box" id="about-me"> <!-- Added IDs to the sections for anchor links to scroll to -->
-      <h2>About Me</h2>
-      <p>Write about yourself and your background here.</p>
+    <img id="profile-pic" src="LinkedIn-Photo.png" alt="Profile Picture">
+    <a id="name">Reza V. Mehrizi</a>
+    <p>I am a dedicated statistician/data scientist with expertise in statistical analysis, machine learning, and AI technologies using SQL, Python, R, Tableau. In my free time, I love to explore new technologies and expand my knowledge in the field of data science and neurology.
+    I also enjoy engaging in various activities such as playing tennis, soccer, hiking and camping.
+    </p>
+
+    <div style="display: flex; justify-content: center;">
+      <a class="resume-link" href="Reume_Reza_Mehrizi.pdf" download>
+        <img src="resume-logo.png" alt="Resume Logo" style="vertical-align: middle; width: 30px; height: 30px;"> Download my resume!
+      <p>
     </div>
     
-    <div class="box" id="professional-experience">
-      <h2>Professional Experience</h2>
-      <p>Write about your professional experience here.</p>
+    <hr class="link-separator" style="width: 100%; margin-top: 5px; margin-bottom: 5px;">
+    
+    <div class="logo-link-container">
+      <img class="logo" src="email-logo.png" alt="Email Logo">
+      <a class="sidebar-link" href="mailto:valiollahi.reza@gmail.com">valiollahi.reza@gmail.com</a>
     </div>
+    <div class="logo-link-container">
+      <img class="logo" src="email-logo.png" alt="Email Logo">
+      <a class="sidebar-link" href="mailto:rvalioll@uwaterloo.ca">rvalioll@uwaterloo.ca</a>
+    </div>
+
+    <div class="logo-link-container">
+      <img class="logo" src="linkedin-logo1.png" alt="LinkedIn Logo">
+      <a class="sidebar-link" href="https://www.linkedin.com/in/reza-mehrizi/">LinkedIn</a>
+    </div>
+    <div class="logo-link-container">
+      <img class="logo" src="github-logo1.png" alt="Github Logo">
+      <a class="sidebar-link" href="https://github.com/Rezamehrizi">Github</a>
+    </div>
+    <div class="logo-link-container">
+      <img class="logo" src="google-logo1.png" alt="Google Logo style="vertical-align: middle; width: 30px; height: 30px;">
+      <a class="sidebar-link" href="https://scholar.google.com/citations?user=fa3zgGAAAAAJ&hl=en/">Google Scholar</p>
+    </div>
+    <hr class="link-separator" style="width: 100%; margin-top: 5px; margin-bottom: 5px;">
+
+    <a class="sidebar-link" href="#about-me">About Me</a>
+    <a class="sidebar-link" href="#professional-experience">Professional Experience</a>
+    <a class="sidebar-link" href="#publications">Publications</a>
+    <a class="sidebar-link" href="#projects">Projects</a>
+  </div>
+  
+
+
+
+  <div id="main-content">
+    <h2>About Me</h2>
+    <div class="box" id="about-me">
+      
+      <p> 🔍 I am Reza, a data scientist and statistician with a PhD in Statistics from the <a class="no-underline" href="https://www.uwaterloo.ca" target="_blank">University of Waterloo</a>. My research interests revolve around the intersection of data science, statistics, and AI technologies. Specifically, I am passionate about exploring machine learning approaches, leveraging AI techniques, and developing innovative solutions in the field of data analysis and prediction.<p>
+💡I am deeply committed to my work, continuously seeking new challenges that push my limits. I eagerly embrace complex problems as opportunities to exercise my innovative thinking and deliver exceptional results. <p>
+🤝 I actively engage in collaborative environments, valuing the diverse perspectives and expertise of team members. I welcome feedback and embrace diverse viewpoints, recognizing their role in achieving optimal results and fostering shared professional growth.
+</p>
+
+    </div>
+    <h2>Professional Highlights</h2>
+    <div class="box" id="professional-experience">
+	
+    <p><span class="left-text"><b> Data Scientist and Statistician at <a class="no-underline" href="https://uwaterloo.ca/mechatronic-vehicle-systems-lab/" target="_blank">Mechatronic Vehicle System Labs </a></b></span></p> 
+    <span class="right-text">Jan 2021 - Present<br></span>
+
+  <br>
+    <div class="experience-building"></div>
+    <ul class="experience-bullet-points">
+      <li>Developed a streamlined logistics optimization solution leveraging graphical models and ML predictive algorithms, resulting in a remarkable 17% surge in warehouse throughput efficiency.</li>
+      <li>Designed and deployed a Deep Learning and Dynamic Bayesian Networks-based fault detection and root cause diagnosis algorithm for the automotive industry, resulting in substantial cost savings and enhanced vehicle reliability.</li>
+
+    </ul>
+  </div>
+
+
+<div class="box" id="professional-experience">
+	
+    <p><span class="left-text"><b> Statistical Consultant and Teaching Assistant at <a class="no-underline" href="https://www.uwaterloo.ca" target="_blank">University of Waterloo</a></b></span></p> 
+    <span class="right-text">September 2016 - September 2021<br></span>
+
+  <br>
+    <div class="experience-building"></div>
+    <ul class="experience-bullet-points">
+      
+      <li>Developed a highly accurate anomaly detection algorithm using statistical and ML methodologies enabling precise disease diagnosis prediction in the healthcare system, particularly for Covid-19.</li>
+<li>Collaborated with Expedia Group, an international shipping, and a sensor fouling system company to develop machine learning predictive models, resulting in substantial enhancements in productivity, service quality, and cost-effectiveness.</li>
+
+    </ul>
+  </div>
+
+<div class="box" id="professional-experience">
+	
+    <p><span class="left-text"><b> Lecturer at <a class="no-underline" href="https://english.semnan.ac.ir/" target="_blank">Semnan University</a></b></span></p> 
+    <span class="right-text">September 2010 - August 2021<br></span>
+
+  <br>
+    <div class="experience-building"></div>
+    <ul class="experience-bullet-points">
+      
+      <li>Developed a highly accurate anomaly detection algorithm using statistical and ML methodologies enabling precise disease diagnosis prediction in the healthcare system, particularly for Covid-19.</li>
+<li>Collaborated with Expedia Group, an international shipping, and a sensor fouling system company to develop machine learning predictive models, resulting in substantial enhancements in productivity, service quality, and cost-effectiveness.</li>
+
+    </ul>
+  </div>
+
+
+
+
+
     
     <div class="box" id="publications">
       <h2>Publications</h2>
-      <p>Write about your publications here.</p>
+      <p>Coming soon...</p>
     </div>
+
     
+
+
+
     <div class="box" id="projects">
       <h2>Projects</h2>
-      <p>Write about your projects here.</p>
+      <p>Coming soon...</p>
     </div>
     
-    <!-- Add more boxes for additional information -->
+    <div class="box" id="Collaboration">
+      <h2>Collaboration</h2>
+      <p>🤝 I am enthusiastic about collaborating with like-minded professionals and contributing to projects that push the boundaries of what can be achieved through the intelligent use of data. If you are seeking a dedicated statistician and data scientist with a passion for uncovering insights and leveraging AI and ML, I would be thrilled to connect and explore potential collaborations.</p>
+    </div>
   </div>
 </body>
 </html>
